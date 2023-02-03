@@ -5,7 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preference</title>
+    <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
     <style type="text/css">
+
+        .cta-btn {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    color: #fff;
+    background: var(--color-primary);
+}
         h1{
             text-align: center;
             text-transform: uppercase;
@@ -13,32 +48,102 @@
         .preferences{
             align-items: center;
         }
+        input.defaultCheckbox{
+            float: right;
+            width: 40px;
+            height: 40px;      
+        }
+        input[type="submit"]{
+           height: 0%  ;
+        }
     </style>
+
 </head>
 <body>
     <h1>Select Preferences!</h1>
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+                <input type="checkbox" class="defaultCheckbox">
+              <i class="bi bi-film"></i>
+              <h4><a ><u>Movie</u></a></h4>
+              <p>films generally or the film industry.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+                <input type="checkbox" class="defaultCheckbox">
+              <i class="bi bi-file-music"></i>
+              <h4><a ><u>Music</u></a></h4>
+              <p>vocal or instrumental sounds (or both) combined in such a way as to produce beauty of form, harmony, and expression of emotion.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+                <input type="checkbox" class="defaultCheckbox">
+              <i class="bi bi-broadcast"></i>
+              <h4><a ><u>Science</u></a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+                <input type="checkbox" class="defaultCheckbox">
+              <i class="bi bi-fire"></i>
+              <h4><a ><u>Anime</u></a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+                <input type="checkbox" class="defaultCheckbox">
+              <i class="bi bi-bag-heart"></i>
+              <h4><a ><u>Life Style</u></a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+                <input type="checkbox" class="defaultCheckbox">
+              <i class="bi bi-laptop"></i>
+              <h4><a ><u>Technology</u></a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+                <input type="checkbox" class="defaultCheckbox">
+              <i class="bi bi-scooter"></i>
+              <h4><a ><u>Sports</u></a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+                <input type="checkbox" class="defaultCheckbox">
+              <i class="bi bi-book-half"></i>
+              <h4><a ><u>Education</u></a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>        
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
 <div class="preferences">
-<form action="index.html">
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1">Food</label><br>
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1">Movies</label><br>
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1">Music</label><br>
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1">Anime</label><br>
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1">Life Style</label><br>
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1">Techonology</label><br>
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1">Science</label><br>
-  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-  <label for="vehicle2">Education</label><br>
-  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-  <label for="vehicle3">Sports</label><br><br>
-  <input type="submit" value="Submit">
-</form>
+    <center>
+        <br>
+        <a class="cta-btn" href="home.html">Submit</a>
+    </center>
+    <br>
 </div>
 </body>
 </html>
